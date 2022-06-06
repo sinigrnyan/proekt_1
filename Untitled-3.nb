@@ -1,0 +1,255 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 8.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[      8264,        245]
+NotebookOptionsPosition[      7723,        221]
+NotebookOutlinePosition[      8066,        236]
+CellTagsIndexPosition[      8023,        233]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+  RowBox[{
+   RowBox[{"Plot", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Evaluate", "[", "\[IndentingNewLine]", 
+      RowBox[{
+       RowBox[{"y", "[", "x", "]"}], "/.", 
+       RowBox[{"First", "[", 
+        RowBox[{"DSolve", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{
+             RowBox[{
+              RowBox[{"a", "*", 
+               RowBox[{
+                RowBox[{"y", "''"}], "[", "x", "]"}]}], "+", 
+              RowBox[{"b", "*", 
+               RowBox[{
+                RowBox[{"y", "'"}], "[", "x", "]"}]}], "+", 
+              RowBox[{"c", "*", 
+               RowBox[{"y", "[", "x", "]"}]}]}], "\[Equal]", " ", "0"}], ",", 
+            " ", 
+            RowBox[{
+             RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", " ", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"y", "'"}], "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}],
+           ",", "y", ",", " ", "x"}], "]"}], "]"}]}], "]"}], ",", " ", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "0", ",", " ", "20"}], "}"}]}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"a", ",", " ", "1", ",", " ", "20"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"b", ",", 
+     RowBox[{"-", "20"}], ",", " ", "20"}], "}"}], ",", " ", 
+   RowBox[{"{", 
+    RowBox[{"c", ",", " ", 
+     RowBox[{"-", "20"}], ",", " ", "20"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.860559038888266*^9, 3.8605590797896595`*^9}, {
+   3.8605591256675334`*^9, 3.860559137555189*^9}, 3.8605592721009245`*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`a$$ = 17.78, $CellContext`b$$ = 
+    3., $CellContext`c$$ = 2.8000000000000007`, Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`a$$], 1, 20}, {
+      Hold[$CellContext`b$$], -20, 20}, {
+      Hold[$CellContext`c$$], -20, 20}}, Typeset`size$$ = {
+    360., {107., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`a$1302$$ = 
+    0, $CellContext`b$1303$$ = 0, $CellContext`c$1304$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, 
+      "Variables" :> {$CellContext`a$$ = 
+        1, $CellContext`b$$ = -20, $CellContext`c$$ = -20}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`a$$, $CellContext`a$1302$$, 0], 
+        Hold[$CellContext`b$$, $CellContext`b$1303$$, 0], 
+        Hold[$CellContext`c$$, $CellContext`c$1304$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> Plot[
+        Evaluate[
+         ReplaceAll[
+          $CellContext`y[$CellContext`x], 
+          First[
+           
+           DSolve[{$CellContext`a$$ 
+               Derivative[
+                2][$CellContext`y][$CellContext`x] + $CellContext`b$$ 
+               Derivative[
+                1][$CellContext`y][$CellContext`x] + $CellContext`c$$ \
+$CellContext`y[$CellContext`x] == 0, $CellContext`y[0] == 0, 
+             Derivative[1][$CellContext`y][0] == 
+             1}, $CellContext`y, $CellContext`x]]]], {$CellContext`x, 0, 20}],
+       "Specifications" :> {{$CellContext`a$$, 1, 20}, {$CellContext`b$$, -20,
+          20}, {$CellContext`c$$, -20, 20}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{409., {180., 185.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.8605590078018637`*^9, {3.8605590425951777`*^9, 3.860559084651968*^9}, {
+   3.860559133103142*^9, 3.8605591647120137`*^9}, 3.8605592745534263`*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"\:0443", "[", "x", "]"}], "/.", 
+  RowBox[{"First", "[", 
+   RowBox[{"DSolve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "*", 
+          RowBox[{
+           RowBox[{"y", "''"}], "[", "x", "]"}]}], "+", 
+         RowBox[{"b", "*", 
+          RowBox[{
+           RowBox[{"y", "'"}], "[", "x", "]"}]}], "+", 
+         RowBox[{"c", "*", 
+          RowBox[{"y", "[", "x", "]"}]}]}], "\[Equal]", " ", "0"}], ",", " ", 
+       RowBox[{
+        RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"y", "'"}], "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",",
+      "y", ",", " ", "x"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.860559178583807*^9, 3.860559193580042*^9}}],
+
+Cell[BoxData[
+ RowBox[{"\:0443", "[", "x", "]"}]], "Output",
+ CellChangeTimes->{{3.860559179364617*^9, 3.8605592245926*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  RowBox[{"y", "[", "x", "]"}], "/.", 
+  RowBox[{"First", "[", 
+   RowBox[{"DSolve", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        RowBox[{
+         RowBox[{"a", "*", 
+          RowBox[{
+           RowBox[{"y", "''"}], "[", "x", "]"}]}], "+", 
+         RowBox[{"b", "*", 
+          RowBox[{
+           RowBox[{"y", "'"}], "[", "x", "]"}]}], "+", 
+         RowBox[{"c", "*", 
+          RowBox[{"y", "[", "x", "]"}]}]}], "\[Equal]", " ", "0"}], ",", " ", 
+       RowBox[{
+        RowBox[{"y", "[", "0", "]"}], "\[Equal]", "0"}], ",", " ", 
+       RowBox[{
+        RowBox[{
+         RowBox[{"y", "'"}], "[", "0", "]"}], "\[Equal]", "1"}]}], "}"}], ",",
+      "y", ",", " ", "x"}], "]"}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.8605592388390865`*^9, 3.860559252137331*^9}}],
+
+Cell[BoxData[
+ RowBox[{"-", 
+  FractionBox[
+   RowBox[{"a", " ", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["\[ExponentialE]", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "b"}], "-", 
+           SqrtBox[
+            RowBox[{
+             SuperscriptBox["b", "2"], "-", 
+             RowBox[{"4", " ", "a", " ", "c"}]}]]}], ")"}], " ", "x"}], 
+        RowBox[{"2", " ", "a"}]]], "-", 
+      SuperscriptBox["\[ExponentialE]", 
+       FractionBox[
+        RowBox[{
+         RowBox[{"(", 
+          RowBox[{
+           RowBox[{"-", "b"}], "+", 
+           SqrtBox[
+            RowBox[{
+             SuperscriptBox["b", "2"], "-", 
+             RowBox[{"4", " ", "a", " ", "c"}]}]]}], ")"}], " ", "x"}], 
+        RowBox[{"2", " ", "a"}]]]}], ")"}]}], 
+   SqrtBox[
+    RowBox[{
+     SuperscriptBox["b", "2"], "-", 
+     RowBox[{"4", " ", "a", " ", "c"}]}]]]}]], "Output",
+ CellChangeTimes->{
+  3.8605592126858788`*^9, {3.8605592441078854`*^9, 3.8605592534180336`*^9}}]
+}, Open  ]]
+},
+WindowSize->{815, 832},
+WindowMargins->{{13, Automatic}, {Automatic, 46}},
+FrontEndVersion->"8.0 for Microsoft Windows (64-bit) (October 6, 2011)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 1640, 42, 112, "Input"],
+Cell[2222, 66, 2593, 55, 382, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4852, 126, 829, 24, 31, "Input"],
+Cell[5684, 152, 124, 2, 30, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5845, 159, 826, 24, 31, "Input"],
+Cell[6674, 185, 1033, 33, 117, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)
+
