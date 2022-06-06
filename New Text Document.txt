@@ -1,0 +1,22 @@
+e=0.001;
+b=0;
+ezplot(@f, [0 8]), hold on
+Xkm=b;
+Xkp=0;
+Yo=f(b);
+k=1;
+while(abs(Yo)>e)
+Xk=Xkm-f(Xkm)/fp(Xkm);
+Xkm=Xk;
+Xkp=fp(Xk);
+Yo=f(Xk);
+k=k+1;
+end
+fprintf('Xk=%f\n', Xk)
+plot(Xk,0,'or'), grid on
+function [F]=f(t)
+F=1+((1+sin(t)-cos(t)).^2)-(sin(2*t)-cos(2*t)-0.2).^2;
+end
+function [F]=fp(t)
+F=((sin(t)+1)-cos(t)).*(2*sin(t)+2*cos(t))-((sin(2*t)-cos(2*t)-0.2).*(4*sin(2*t)+4*cos(2*t)));
+end
