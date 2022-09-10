@@ -1,0 +1,6 @@
+ID animal gender nickname dateofbirth dateofarive
+0042 cat male Pushok 13.09.2015 31.12.2016
+0043 dog female Dora 29.01.2015 31.12.2016
+0003 elephant male Archi 03.03.2011 31.12.2016
+0045 cat female Pushoka 13.09.2005 31.12.2016
+0033 dog male Doga 10.01.2015 31.12.2018
